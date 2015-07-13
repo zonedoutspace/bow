@@ -1,0 +1,584 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css";
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+@font-face {
+	font-family: OpenSans;
+	src: url('../fonts/OpenSans-Regular.ttf');
+}
+@font-face {
+	font-family: OpenSansBold;
+	src: url('../fonts/OpenSans-Bold.ttf');
+}
+@font-face {
+	font-family: OpenSansLight;
+	src: url('../fonts/OpenSans-Light.ttf');
+}
+img.logo {
+	cursor: pointer;
+	background: rgba(255,255,255,0.2);
+	border-bottom-right-radius: 1px;
+	border-bottom-left-radius: 1px;
+}
+body {
+	background: #f0f0f0;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+}
+.header-container {
+	width: 100%;
+	background: url('../img/hero_background2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 500px;
+	clear: both;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+	z-index: 3;
+	position: relative;
+}
+header {
+	margin-bottom: 20px;
+}
+nav {
+	margin-top: 3em;
+	float: right;
+	clear: right;
+}
+nav a {
+	color: #fff;
+	font-family: OpenSansBold;
+	text-transform: uppercase;
+	font-size: 16px;
+	margin-right: 14px;
+	padding-bottom: 3px;
+	line-height: 1.76923;
+	opacity: 0.7;
+	letter-spacing: 0.3px;
+}
+nav a:hover {
+	color: #fff;
+	border-bottom: 3px solid #fff;
+	opacity: 1;
+	webkit-transition: opacity 300ms ease-in;
+	transition: opacity 300ms ease-in;
+}
+nav a.no-hover:hover {
+	border-bottom: none;
+	cursor: default;
+	opacity: 0.7;
+}
+.hero-title {
+	margin-top: 30px;
+	font-family: OpenSansBold;
+	font-size: 40px;
+	text-transform: uppercase;
+	color: #fff;
+}
+.hero-description {
+	display: block;
+	text-align: justify;
+	font-family: OpenSans;
+	font-size: 18px;
+	color: #fff;
+	margin-top: 20px;
+	padding: 20px;
+	background: rgba(0,0,0,0.3);
+}
+.hero-description strong {
+	font-family: OpenSansBold;
+}
+.hero-btn {
+	display: block;
+	margin-top: 30px;
+	font-family: OpenSansBold;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #fff;
+	width: 230px;
+	letter-spacing: 0.3px;
+	background: #789048;
+	padding: 15px;
+	text-align: center;
+	color: #fff;
+	border-radius: 2px;
+	
+}
+.hero-btn:hover {
+	color: #fff;
+	cursor: pointer;
+	background: #849e4f;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+.content-boxes {
+	width: 100%;
+	font-family: OpenSans;
+	margin-top: 50px;
+	padding: 10px;
+}
+.content-boxes h3 {
+	font-family: OpenSansBold;
+	color: #444;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+.content-boxes p {
+	font-size: 16px;
+	color: #444;
+	text-align: justify;
+}
+.footer-container {
+	margin-top: 50px;
+	/* background: #3d4351; */
+	width: 100%;
+	height: 200px;
+}
+.outer-container {
+	width: 100%;
+	height: 100%;
+	background: url('https://www.coinbase.com/assets/home/bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.form-container {
+	padding-top: 3em;
+}
+.form-container img {
+	background: #444;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	box-shadow: 0 0px 20px rgba(0, 0, 0, 0.4);
+}
+.form-container form {
+	box-shadow: 0 0px 20px rgba(0, 0, 0, 0.4);
+	text-align: center;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	border: 2px solid #444;
+	border-radius: 5px;
+	background: #ddd;
+}
+.form-container form label {
+	font-family: OpenSansBold;
+	font-size: 14px;
+	padding-bottom: 5px;
+}
+.form-container form input[type="text"],input[type="password"],input[type="email"] {
+	font-family: OpenSans;
+	font-size: 14px;
+	text-align: center;
+	border: 1px solid #909090;
+	border-radius: 2px;
+	background: #f0f0f0;
+}
+.form-container form input[type="text"]:focus ,input[type="password"]:focus, input[type="email"]:focus {
+	box-shadow: none;
+	border: 2px solid #444;
+}
+.form-container form input[type="submit"] {
+	border: none;
+	display: block;
+	margin-top: 15px;
+	font-family: OpenSansBold;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #fff;
+	width: 219px;
+	letter-spacing: 0.3px;
+	background: #789048;
+	padding: 15px;
+	text-align: center;
+	color: #fff;
+	border-radius: 2px;
+	margin-bottom: 15px;
+}
+.form-container form input[type="submit"]:hover {
+	color: #fff;
+	cursor: pointer;
+	background: #849e4f;
+}
+.form-container form a {
+	margin-top: 10px;
+	font-family: OpenSansBold;
+	font-size: 13px;
+	color: #333;
+	display: block;
+}
+.form-container form a:hover {
+	text-decoration: underline;
+}
+.form-container label.chklbl {
+	padding: 0px;
+	margin: 0px;
+	text-align: left;
+	cursor: pointer;
+}
+/*
+.form-container label.chklbl input[type="checkbox"] {
+	display: none;
+}
+.form-container label.chklbl input[type="checkbox"] + span.label-text:before {
+	content: "\f096";
+	font-family: "FontAwesome";
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	color: #666;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	width: 1em;
+	display: inline-block;
+	margin-right: 2px;
+}
+.form-container label.chklbl input[type="checkbox"]:checked + .label-text:before {
+	content: "\f14a";
+	color: #666;
+	-webkit-animation:tick 180ms ease-in;
+	animation:tick 180ms ease-in;
+}
+@-webkit-keyframes tick {
+    0%   {-webkit-transform: scale(0);}
+    90%  {-webkit-transform: scale(1.4);}
+    100%  {-webkit-transform: scale(1);}
+}
+@keyframes tick {
+    0%   {transform: scale(0);}
+    90%  {transform: scale(1.4);}
+    100%  {transform: scale(1);}
+}
+*/
+p.error {
+	margin-top: 20px;
+	background: #FF5C53;
+	font-family: OpenSansBold;
+	letter-spacing: 0.2px;
+	font-size: 13px;
+	padding: 10px;
+	color: #fff;
+	border-radius: 2px;
+	border: 2px solid #D2291F;
+}
+p.error span {
+	float: right;
+	margin-top: -11px;
+	margin-right: -6px;
+	position: relative;
+}
+p.error span i {
+	cursor: pointer;
+}
+p.success {
+	margin-top: 20px;
+	background: #3EC04D;
+	font-family: OpenSansBold;
+	letter-spacing: 0.2px;
+	font-size: 13px;
+	padding: 10px;
+	color: #fff;
+	border-radius: 2px;
+	border: 2px solid #21712A;
+}
+p.success span {
+	float: right;
+	margin-top: -11px;
+	margin-right: -6px;
+	position: relative;
+}
+p.success span i {
+	cursor: pointer;
+}
+.top-container {
+	background: #fff;
+	width: 100%;
+	border-bottom: 2px solid #aaa;
+}
+.top-container img.logo {
+	background: #aaa;
+	padding: 10px;
+}
+.top-container .user-logout {
+	font-family: OpenSansBold;
+	font-size: 14px;
+	float: right;
+	margin-top: 20px;
+}
+.top-container .user-logout a.logout {
+	margin: 20px;
+	padding: 10px;
+	background: #0078AC;
+	color: #fff;
+}
+.top-container .user-logout a.logout i {
+	padding-right: 10px;
+	padding-top: 2px;
+	margin-left: 5px;
+	font-size: 15px;
+}
+.top-container .user-logout a.logout:hover {
+	background: #0D9DD3;
+}
+.main-content {
+	margin-top: 2em;
+	width: 100%;
+}
+.main-content .tabs dd a, .tabs .tab-title a {
+	background: #0078AC;
+	color: #fff;
+	padding: 7px;
+	letter-spacing: 0.2px;
+	font-family: OpenSansBold;
+	font-size: 14px;
+	margin-right: 8px;
+}
+.main-content .tabs dd.active a, .tabs .tab-title.active a {
+	background: #0D9DD3;
+	outline: none;
+}
+.main-content .tabs dd a:hover, .tabs .tab-title a:hover {
+	background: #0D9DD3;
+}
+.main-content .tabs-content {
+	background: #fff;
+	color: #666;
+	margin-top: 1em;
+	border-left: 3px solid #0D9DD3;
+	box-shadow: 2px 2px 6px rgba(100, 100, 100, 0.2);
+}
+.main-content .tabs-content > .content {
+	padding: 15px;
+}
+.main-content h4 {
+	font-size: 17px;
+	font-family: OpenSansBold;
+	margin-bottom: 5px;
+	-webkit-font-smoothing: antialiased;
+}
+.tab-content-inner {
+	border-top: 1px dashed #ddd;
+	padding: 10px;
+	padding-left: 0px;
+	font-size: 14px;
+	letter-spacing: 0.2px;
+	font-family: tahoma;
+	width: 100%;
+	min-height: 120px;
+	height: auto;
+}
+.tab-content-inner p {
+	font-size: 14px;
+	font-size: tahoma;
+}
+.tab-content-inner span {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 25px;
+	float: left;
+	color: #444;
+	height: auto;
+	width: 33%;
+	cursor: pointer;
+	padding: 20px;
+	-webkit-font-smoothing: antialiased;
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+.tab-content-inner span label {
+	font-family: 'Lato', sans-serif;
+	font-size: 12px;
+	height: auto;
+	letter-spacing: 0.5px;
+	text-align: left;
+	font-weight: 900;
+	text-transform: uppercase;
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	-webkit-font-smoothing: antialiased;
+}
+.tab-content-inner span i {
+	font-size: 18px;
+}
+table.account-list {
+	width: 100%;
+}
+table.account-list tr th:first-child {
+	width: 70%;
+}
+table.account-list tr th:last-child {
+	width: 29%;
+	text-align: center;
+}
+table.account-list tr th, td {
+	font-family: 'Lato';
+	font-size: 16px;
+}
+table.account-list tr:last-child td {
+	border-bottom: none;
+} 
+table.account-list tr td:last-child {
+	text-align: center;
+}
+a.btn-action {
+	padding: 7px;
+	background: #444;
+	color: #fff;
+	font-family: 'Lato';
+	font-size: 12px;
+	text-transform: uppercase;
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	-webkit-font-smoothing: antialiased;
+}
+a.btn-action:hover {
+	background: #555;
+}
+p.info {
+	font-size: 11px;
+	font-family: Tahoma;
+}
+table.transactions-list {
+	font-family: 'Lato';
+	font-size: 16px;
+	width: 100%;
+}
+table.transactions-list th {
+	font-size: 16px;
+	width: auto;
+}
+table.transactions-list tr:last-child td {
+	border-bottom: none;
+}
+table tr th, table tr td {
+	font-size: 0.75rem;
+}
+#send-receive-accordion dd.accordion-navigation a {
+	font-family: 'Lato';
+	font-size: 16px;
+	font-weight: bold; 
+}
+#send-receive-accordion .accordion-navigation > a, .accordion dd > a {
+	background: #0078AC;
+	color: #fff;
+	text-align: center;
+	padding: 9px;
+}
+#send-receive-accordion .accordion-navigation > a:hover {
+	background: #0D9DD3;
+}
+#send-receive-accordion .accordion-navigation.active > a, .accordion dd.active > a {
+	background: #0D9DD3;
+}
+.srfrm {
+	max-width: 300px;
+	margin: 0 auto;
+}
+.srfrm label {
+	font-family: 'Lato', sans-serif;
+	font-size: 12px;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+	text-align: center;
+}
+.srfrm input[type="text"], input[type="number"] {
+	font-family: 'Lato', sans-serif;
+	font-size: 13px;
+	text-align: center;
+}
+.srfrm input[type="text"]:focus, input[type="number"]:focus {
+	box-shadow: none;
+}
+.srfrm input[type="submit"] {
+	padding: 7px;
+	background: #444;
+	color: #fff;
+	width: 100%;
+	font-family: 'Lato';
+	font-size: 12px;
+	font-weight: bolder;
+	text-transform: uppercase;
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	-webkit-font-smoothing: antialiased;
+	border: none;
+	letter-spacing: 0.3px;
+	cursor: pointer;
+}
+.srfrm input[type="submit"]:hover {
+	background: #555;
+}
+.srfrm select {
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+	font-size: 12px;
+}
+#send-receive-accordion dd.accordion-navigation a.btn-action {
+	padding: 7px;
+	background: #444;
+	color: #fff;
+	font-family: 'Lato';
+	font-size: 12px;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	-webkit-font-smoothing: antialiased;
+}
+#send-receive-accordion dd.accordion-navigation a.btn-action:hover {
+	background: #555;
+}
+#qrcode {
+	cursor: pointer;
+	margin-top: 30px;
+}
+.container {
+	width: 980px;
+	max-width: 100%;
+	margin: auto;
+	padding: 20px;
+	font-color: #333;
+}
+.container > h1, h2, h3 {
+	font-family: "Lato";
+	font-weight: 100;
+}
+.container > .api_nav {
+	color: #333;
+	font-family: "Open Sans";
+	font-weight: 500;
+	font-size: 14px;
+	margin-top: 20px;
+	padding-bottom: 15px;
+	border-bottom: 2px solid #777;
+}
+.container > .api_nav a:first-child {
+	margin-left: 0;
+}
+.container > .api_nav a {
+	color: #888;
+	margin-right: 15px;
+	cursor: normal;
+}
+.api_nav a:hover {
+	color: #111;
+	transition: all 0.3s ease-in-out;
+}
+.container > a > h3 {
+	padding-top: 25px;
+}
+.container > p {
+	font-family: "Lato";
+	font-size: 16px;
+	text-align: justify;
+}
+.container > table {
+	width: 99%;
+	max-width: 99%;
+}
+.container > table th {
+	font-size: 17px;
+	font-weight: 600;
+	font-family: "Lato";
+	text-transform: uppercase;
+}
+.container table tr td {
+	background: transparent;
+	background-color: transparent;
+	font-size: 13px;
+	font-family: "Consolas", "Courier New";
+}
