@@ -136,7 +136,10 @@ class Bitcoin {
             CURLOPT_MAXREDIRS      => 10,
             CURLOPT_HTTPHEADER     => array('Content-type: application/json'),
             CURLOPT_POST           => TRUE,
-            CURLOPT_POSTFIELDS     => $request
+            CURLOPT_POSTFIELDS     => $request,
+            //Added to bypass ssl verification.
+            CURLOPT_SSL_VERIFYHOST => 0,
+            CURLOPT_SSL_VERIFYPEER => 0
         );
 
         // This prevents users from getting the following warning when open_basedir is set:
